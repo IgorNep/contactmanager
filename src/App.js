@@ -13,7 +13,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Provider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Header branding="Contact Manager" />
           <div className="container">
