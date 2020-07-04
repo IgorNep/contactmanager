@@ -12,7 +12,8 @@ export default class AddContact extends Component {
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  onSubmit = (dispatch) => {
+  onSubmit = (dispatch, e) => {
+    e.preventDefault();
     const { name, email, phone } = this.state;
 
     if (name === "") {

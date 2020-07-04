@@ -6,7 +6,10 @@ export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-secondary navbar-nav py-0 mb-5">
       <div className="container">
-        <a href="/" className="navbar-brand">
+        <a
+          href="https://igornep.github.io/contactmanager/"
+          className="navbar-brand"
+        >
           {branding}
         </a>
         <div>

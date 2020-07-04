@@ -16,12 +16,15 @@ export default function TextInputGroup({
       <input
         type={type}
         placeholder={placeholder}
-        className="form-control"
+        className={classnames("form-control form-control-lg", {
+          "is-invalid": error,
+        })}
         name={name}
         value={value}
         onChange={onChange}
         error={error}
       />
+      {error && <div className="ivalid-feedback">{error}</div>}
     </div>
   );
 }
