@@ -6,14 +6,14 @@ import Provider from "./context";
 import Contacts from "./components/Contacts/Contacts";
 import AddContact from "./components/Contacts/AddContact";
 import EditContact from "./components/Contacts/EditContact";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <Provider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div>
           <Header branding="Contact Manager" />
           <div className="container">
