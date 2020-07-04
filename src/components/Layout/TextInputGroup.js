@@ -25,7 +25,7 @@ export default function TextInputGroup({
         onChange={onChange}
         error={error}
       />
-      {error && <div className="ivalid-feedback">{error}</div>}
+      {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 }
